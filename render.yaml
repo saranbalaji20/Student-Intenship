@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: student-internship-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_DB_URI
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false

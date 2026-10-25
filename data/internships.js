@@ -1,0 +1,133 @@
+// Seed catalogue for the Student Internship Portal.
+// `deadlineInDays` is converted to a real date the first time the database is seeded.
+
+const internships = [
+    {
+        slug: 'frontend-developer-intern',
+        title: 'Frontend Developer Intern',
+        company: 'Nimbus Labs',
+        location: 'Bengaluru',
+        coverImage: 'https://picsum.photos/seed/nimbus-labs/1200/675',
+        mode: 'Hybrid',
+        stipend: 25000,
+        duration: '6 months',
+        description:
+            'Join a small product team building dashboards used by thousands of logistics customers. You will pair with senior engineers, ship real features every sprint, and learn how design systems scale.',
+        skills: ['React', 'JavaScript', 'HTML/CSS', 'Git'],
+        responsibilities: [
+            'Build reusable React components from Figma designs',
+            'Fix accessibility and responsive layout issues',
+            'Write unit tests and participate in code reviews',
+        ],
+        eligibility: 'Pre-final or final year B.E./B.Tech students in CSE, IT or related branches.',
+        openings: 3,
+        deadlineInDays: 28,
+    },
+    {
+        slug: 'backend-nodejs-intern',
+        title: 'Backend Developer Intern (Node.js)',
+        company: 'Finlytics',
+        location: 'Pune',
+        coverImage: 'https://picsum.photos/seed/finlytics/1200/675',
+        mode: 'On-site',
+        stipend: 30000,
+        duration: '6 months',
+        description:
+            'Work on the core payments platform that processes millions of transactions. You will design REST APIs, improve database performance and learn production observability first-hand.',
+        skills: ['Node.js', 'Express', 'MongoDB', 'REST APIs'],
+        responsibilities: [
+            'Develop and document Express REST endpoints',
+            'Model data in MongoDB and write aggregation queries',
+            'Add logging, metrics and automated tests for new services',
+        ],
+        eligibility: 'Final year students with strong fundamentals in data structures and databases.',
+        openings: 2,
+        deadlineInDays: 21,
+    },
+    {
+        slug: 'data-analyst-intern',
+        title: 'Data Analyst Intern',
+        company: 'Insightly Analytics',
+        location: 'Remote',
+        coverImage: 'https://picsum.photos/seed/insightly-analytics/1200/675',
+        mode: 'Remote',
+        stipend: 20000,
+        duration: '3 months',
+        description:
+            'Help retail clients make sense of their sales data. You will clean datasets, build dashboards and present weekly insights to the consulting team.',
+        skills: ['SQL', 'Python', 'Excel', 'Power BI'],
+        responsibilities: [
+            'Write SQL queries to prepare analysis-ready datasets',
+            'Create interactive Power BI dashboards',
+            'Summarise findings in clear weekly reports',
+        ],
+        eligibility: 'Open to all branches in the pre-final or final year with an interest in analytics.',
+        openings: 4,
+        deadlineInDays: 35,
+    },
+    {
+        slug: 'ui-ux-design-intern',
+        title: 'UI/UX Design Intern',
+        company: 'Paperplane Studio',
+        location: 'Mumbai',
+        coverImage: 'https://picsum.photos/seed/paperplane-studio/1200/675',
+        mode: 'Hybrid',
+        stipend: 18000,
+        duration: '4 months',
+        description:
+            'Design delightful mobile experiences for early-stage startups. You will run quick user interviews, iterate on prototypes and hand off production-ready screens.',
+        skills: ['Figma', 'User Research', 'Prototyping', 'Design Systems'],
+        responsibilities: [
+            'Create wireframes and high-fidelity Figma prototypes',
+            'Conduct usability tests and synthesise feedback',
+            'Maintain the component library used across projects',
+        ],
+        eligibility: 'Students from any branch with a portfolio of design work.',
+        openings: 2,
+        deadlineInDays: 18,
+    },
+    {
+        slug: 'devops-cloud-intern',
+        title: 'DevOps & Cloud Intern',
+        company: 'HexaCloud',
+        location: 'Hyderabad',
+        coverImage: 'https://picsum.photos/seed/hexacloud/1200/675',
+        mode: 'On-site',
+        stipend: 28000,
+        duration: '6 months',
+        description:
+            'Learn infrastructure as code in a real cloud environment. You will automate deployments, improve CI pipelines and help teams ship safely to Kubernetes.',
+        skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'Linux'],
+        responsibilities: [
+            'Maintain Docker images and CI/CD pipelines',
+            'Write Terraform modules for staging environments',
+            'Respond to alerts and document runbooks',
+        ],
+        eligibility: 'Final year students in CSE/IT/ECE with exposure to Linux and cloud basics.',
+        openings: 1,
+        deadlineInDays: 14,
+    },
+    {
+        slug: 'full-stack-developer-intern',
+        title: 'Full Stack Developer Intern',
+        company: 'CampusOrbit',
+        location: 'Chennai',
+        coverImage: 'https://picsum.photos/seed/campusorbit/1200/675',
+        mode: 'Remote',
+        stipend: 22000,
+        duration: '5 months',
+        description:
+            'Build features end to end for a student community platform. You will touch React screens, Express APIs and MongoDB collections in the same week.',
+        skills: ['MERN', 'React', 'Node.js', 'MongoDB'],
+        responsibilities: [
+            'Ship full-stack features from ticket to deployment',
+            'Review pull requests and improve test coverage',
+            'Work with the founding team on product decisions',
+        ],
+        eligibility: 'Pre-final or final year students who have completed at least one MERN project.',
+        openings: 2,
+        deadlineInDays: 42,
+    },
+];
+
+module.exports = internships;
